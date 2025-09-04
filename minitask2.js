@@ -14,12 +14,12 @@ const profile = {
   },
 };
 
-
-const {name: myName} = profile;
-console.log(myName);
 const {
-    skills: [_, skill],
+  skills: [_, skill],
 } = profile;
+const {
+  education: [{ name: school }],
+} = profile;
+console.log(school);
 console.log(skill);
 // console.log(profile);
-
