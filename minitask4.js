@@ -1,7 +1,3 @@
-// c -> f
-// c -> R
-// c - k
-// informasi
 
 let suhu = 34;
 // keyword function
