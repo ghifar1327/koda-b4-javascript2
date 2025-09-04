@@ -1,7 +1,7 @@
 let suhu = 1;
 // keyword function
 function cF(suhu) {
-  return suhu * 1.18 + " fahrenheit";
+  return suhu * 1.18;
 }
 // Anonymous function
 const cR = function (suhu) {
@@ -12,9 +12,10 @@ const cK = (suhu) => {
   return suhu + 273.15;
 };
 
-function informasi() {
-  return `suhu dalam celcius adalah ${suhu} C, dalam fahrenheit adalah ${cF(
-    suhu
-  )}, dalam reamur adalah ${cR(suhu)}, dan dalam kelvin adalah ${cK(suhu)}`;
+function output(suhu) {
+console.log(`dalam 1 suhu celcius adalah : ${cF(suhu)} farenheit`);
+console.log (`dalam 1 suhu celcius adalah : ${cR(suhu)} reamur`);
+console.log (`dalam 1 suhu celcius adalah : ${cK(suhu)} kelvin`);
 }
-console.log(informasi());
+
+output(25)
